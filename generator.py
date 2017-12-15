@@ -1,4 +1,5 @@
 from keys import *
+from random import randint
 from markovbot import MarkovBot
 import os
 
@@ -11,9 +12,20 @@ book = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'LaNausea-Sartre
 # Make your bot read the book!
 tweetbot.read(book)
 
-tweet = tweetbot.generate_text(10, seedword=['vida', 'sentido'])
+tweet_len = randint(5, 15)
+
+tweet = tweetbot.generate_text(tweet_len, seedword=[])
 
 tweet = "El sentido de la vida es " + tweet[0].lower() + tweet[1::]
 
-api.update_status(status=tweet)
-print(tweet)
+
+
+# print(tweet)
+
+# writting to our generated_sentences.txt file
+# sentences_list = open("generated_sentences.txt", "a")
+# sentences_list.write(tweet + "\n")
+# sentences_list.close()
+
+
+
