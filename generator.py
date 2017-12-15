@@ -1,16 +1,19 @@
-import tweepy
+from keys import *
+from markovbot import MarkovBot
+import os
 
-# Create variables for each key, secret, token
-consumer_key = '662LS2gAlBpV04Un07uu4szoe'
-consumer_secret = 'JizABplMKiwm7JfB3zRD0IM5Go6u8iyYM3Ch2AbGWz2TuoNAyI'
-access_token = '941441521450213378-oAIFLCJ79n7LkKR3frj4B4Hru85bpF4'
-access_token_secret = 'HvlTfKoq4snoJJ69mBwPiliM03HjF0D4T1HjB0GOFm6Va'
+tweetbot = MarkovBot()
 
-# Set up OAuth and integrate with API
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
-api = tweepy.API(auth)
+# Log in to Twitter
+# tweetbot.twitter_login(consumer_key, consumer_secret, access_token, access_token_secret)
+# Construct the path to the book
+book = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'LaNausea-Sartre.txt')
+# Make your bot read the book!
+tweetbot.read(book)
 
-# Write a tweet to push to our Twitter account
-tweet = 'El sentido de la vida es'
+tweet = tweetbot.generate_text(10, seedword=['vida', 'sentido'])
+
+tweet = "El sentido de la vida es " + tweet[0].lower() + tweet[1::]
+
 api.update_status(status=tweet)
+print(tweet)
