@@ -3,8 +3,6 @@ import time
 
 while True:
 
-    time.sleep(1200)
-
     # reading and removing sentences from our generated_sentences.txt file
     sentences_list = open("generated_sentences.txt", "r+")
     tweet = sentences_list.readline()
@@ -15,3 +13,7 @@ while True:
 
     # tweeting!
     api.update_status(status=tweet)
+
+    # waiting an hour to tweet again :)
+    time.sleep(1200)
+
