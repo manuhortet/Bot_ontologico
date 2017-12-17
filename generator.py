@@ -16,11 +16,11 @@ for book in books:
     tweetbot.read(book)
 
 
-for x in range(0, 50):
+for x in range(0, 3):
 
     tweet_len = randint(5, 10)
 
-    tweet = tweetbot.generate_text(tweet_len, seedword=['tiempo'])
+    tweet = tweetbot.generate_text(tweet_len, seedword=['arrepentimiento'])
 
     tweet = "El sentido de la vida es " + tweet[0].lower() + tweet[1::]
 
