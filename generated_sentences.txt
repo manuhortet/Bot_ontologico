@@ -1,0 +1,2 @@
+** The bot will write future tweets here, so you can filter before posting them. **
+** Delete this lines before trying to execute the application. **
