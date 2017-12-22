@@ -1,30 +1,24 @@
-from keys import *
 from random import randint
 from markovbot import MarkovBot
 import os
 
-tweetbot = MarkovBot()
+bot = MarkovBot()
 
-# Log in to Twitter
-# tweetbot.twitter_login(consumer_key, consumer_secret, access_token, access_token_secret)
-# Construct the path to the book
+# Creating a list with the books our book will learn from
 books = [os.path.join(os.path.dirname(os.path.abspath(__file__)), 'LaNausea-Sartre.txt'),
          os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Critica_de_la_razon_dialectica.txt')]
 
 # Make your bot read the books!
 for book in books:
-    tweetbot.read(book)
-
+    bot.read(book)
 
 for x in range(0, 3):
-
+    # len of the new tweets that will be generated, in words (we are not counting "El sentido de la vida es")
     tweet_len = randint(5, 10)
-
-    tweet = tweetbot.generate_text(tweet_len, seedword=['arrepentimiento'])
-
+    # generating tweet, based on its len and seedwords!
+    tweet = bot.generate_text(tweet_len, seedword=[])
+    # adding the beginning of the sentence and solving possible capital letter problem.
     tweet = "El sentido de la vida es " + tweet[0].lower() + tweet[1::]
-
-    # print(tweet)
 
     # writting to our generated_sentences.txt file
     sentences_list = open("generated_sentences.txt", "a")

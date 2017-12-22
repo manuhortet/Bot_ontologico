@@ -20,6 +20,7 @@ while True:
     # tweeting!
     api.update_status(status=tweet)
 
-    # waiting an hour to tweet again :)
-    time.sleep(3600)
+    # waiting X hours to tweet again :)
+    hours = 3
+    time.sleep(3600 * hours)
 
