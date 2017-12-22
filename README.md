@@ -1,15 +1,15 @@
 ![Python 3.5.2](https://img.shields.io/badge/python-3.5.2-blue.svg)
-![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40Bot_ontologico)
 
-# El sentido de la vida es...
+# Bot_ontologico
 
-Bot de generación de lenguaje natural simple para Twitter.  
+Bot de generación de lenguaje natural simple para Twitter que se dedica a divagar sobre el sentido de la vida. ![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40Bot_ontologico)
+
 
 
 
 ## How to setup
 
-#### Dependencias
+### Dependencias
 
 1. Primero, asegurémonos de tener `pip` instalado y actualizado:
 
@@ -24,7 +24,7 @@ Bot de generación de lenguaje natural simple para Twitter.
     ```
     
     
-#### Estructura
+### Estructura
 
 - Bot_ontologico
 
@@ -40,7 +40,7 @@ Bot de generación de lenguaje natural simple para Twitter.
   Las keys que necesitarás para hacer funcionar este bot están comentadas en el archivo `keys.py`.
 
 
-#### Uso
+### Uso
 
 1. Ejecutando el archivo `generator.py`, el bot generará y escribirá en `generated_sentences.txt` un número de tweets igual a la variable `tweets_to_generate`. 
 1. Ejecutando el archivo `poster.py`, el bot publicará los tweets del archivo `generated_sentences.txt`, esperando un número de horas igual al valor de la variable `hours` entre publicación y publicación.
