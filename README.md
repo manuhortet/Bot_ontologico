@@ -2,7 +2,7 @@
 
 # Bot_ontologico
 
-Bot de generación de lenguaje natural simple, dedicado a divagar sobre el sentido de la vida. ![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40Bot_ontologico)
+Bot de generación de lenguaje natural simple, dedicado a divagar sobre el sentido de la vida. <div style="text-align: right"> ![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40Bot_ontologico) </div>
 
 
 
@@ -12,7 +12,7 @@ Bot de generación de lenguaje natural simple, dedicado a divagar sobre el senti
 ### Dependencias
 
 1. Primero, asegurémonos de tener `pip` instalado y actualizado:
-
+![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40Bot_ontologico)
     ```
     pip install --upgrade pip
     ```
@@ -59,4 +59,4 @@ Los tweets son escritos en un archivo y no publicados directamente para darnos l
 
 ##
 
-*No dudes en pedirme ayuda o explicaciones más detalladas.* *[@manuhortet](https://twitter.com/manuhortet?lang=en)*
+*No dudes en pedirme ayuda o explicaciones más detalladas.* <div style="text-align: right">*[@manuhortet](https://twitter.com/manuhortet?lang=en)*</div>
