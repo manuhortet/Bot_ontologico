@@ -34,10 +34,15 @@ Bot de generación de lenguaje natural simple, dedicado a divagar sobre el senti
   - keys.py (*)
   - poster.py
   - README.md
+  (*)
   
 (*) El archivo `keys.py` contiene las claves privadas que conceden a la aplicacion acceso para publicar tweets desde cierta cuenta de Twitter.
   Para obtenerlas debemos crear nuestra aplicación de Twitter desde [este link](https://www.digitalocean.com/community/tutorials/how-to-create-a-twitter-app). Con la aplicación ya creada, desde el Application Manager, debemos buscar el botón _**Create my access token**_ en la pestaña **Permisos**. 
   Las keys que necesitaremos para hacer funcionar este bot están comentadas en el archivo `keys.py`.
+
+(*) *Para que el bot sea capaz de generar texto, ha de ser entrenado con archivos .txt, los cuales he obviado. Con cuantos más archivos .txt sea entrenado, mejor será su producción de texto.
+[@Bot_ontologico](https://twitter.com/Bot_ontologico) es entrenado únicamente con libros del autor Jean-Paul Sartre (entrenar con la obra de un único autor también mejora la producción, al ser más común la repetición de expresiones y estructuras),
+pero podemos entrenar al programa con los archivos .txt que queramos. Solo hemos de añadirlos y editar la variable `books` en el archivo *generator.py*.
 
 
 ### Uso
