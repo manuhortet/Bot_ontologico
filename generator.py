@@ -4,15 +4,18 @@ import os
 
 bot = MarkovBot()
 
-# Creating a list with the books our book will learn from
-books = [os.path.join(os.path.dirname(os.path.abspath(__file__)), 'LaNausea-Sartre.txt'),
-         os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Critica_de_la_razon_dialectica.txt')]
+# Creating a list with the books our book will learn from. Change "book1" and "book2" for real .txt files you want your bot to learn from.
+books = [os.path.join(os.path.dirname(os.path.abspath(__file__)), ''),
+         os.path.join(os.path.dirname(os.path.abspath(__file__)), '')]
 
 # Make your bot read the books!
 for book in books:
     bot.read(book)
 
-for x in range(0, 3):
+# Deciding how many tweets we want to generate and write in generated_sentences.txt
+tweets_to_generate = 5
+
+for x in range(0, tweets_to_generate):
     # len of the new tweets that will be generated, in words (we are not counting "El sentido de la vida es")
     tweet_len = randint(5, 10)
     # generating tweet, based on its len and seedwords!
