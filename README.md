@@ -2,7 +2,7 @@
 
 # Bot_ontologico
 
-Bot de generación de lenguaje natural simple, dedicado a divagar sobre el sentido de la vida. <div style="text-align: right"> ![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40Bot_ontologico) </div>
+Bot de generación de lenguaje natural simple, dedicado a divagar sobre el sentido de la vida. ![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40Bot_ontologico)
 
 
 
@@ -12,7 +12,7 @@ Bot de generación de lenguaje natural simple, dedicado a divagar sobre el senti
 ### Dependencias
 
 1. Primero, asegurémonos de tener `pip` instalado y actualizado:
-![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40Bot_ontologico)
+
     ```
     pip install --upgrade pip
     ```
@@ -34,7 +34,7 @@ Bot de generación de lenguaje natural simple, dedicado a divagar sobre el senti
   - keys.py (*)
   - poster.py
   - README.md
-  (*)
+  - (*)
   
 (*) El archivo `keys.py` contiene las claves privadas que conceden a la aplicacion acceso para publicar tweets desde cierta cuenta de Twitter.
   Para obtenerlas debemos crear nuestra aplicación de Twitter desde [este link](https://www.digitalocean.com/community/tutorials/how-to-create-a-twitter-app). Con la aplicación ya creada, desde el Application Manager, debemos buscar el botón _**Create my access token**_ en la pestaña **Permisos**. 
@@ -59,4 +59,4 @@ Los tweets son escritos en un archivo y no publicados directamente para darnos l
 
 ##
 
-*No dudes en pedirme ayuda o explicaciones más detalladas.* <div style="text-align: right">*[@manuhortet](https://twitter.com/manuhortet?lang=en)*</div>
+*No dudes en pedirme ayuda o explicaciones más detalladas.* *[@manuhortet](https://twitter.com/manuhortet?lang=en)*
