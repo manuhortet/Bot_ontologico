@@ -2,7 +2,7 @@
 
 # Bot_ontologico
 
-Bot de generación de lenguaje natural simple para Twitter que se dedica a divagar sobre el sentido de la vida. ![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40Bot_ontologico)
+Bot de generación de lenguaje natural simple, dedicado  a divagar sobre el sentido de la vida. ![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40Bot_ontologico)
 
 
 
