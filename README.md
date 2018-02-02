@@ -5,8 +5,6 @@
 Bot de generación de lenguaje natural simple, dedicado a divagar sobre el sentido de la vida. ![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40Bot_ontologico)
 
 
-
-
 ## How to setup
 
 ### Dependencias
@@ -51,11 +49,6 @@ pero podemos entrenar al programa con los archivos .txt que queramos. Solo hemos
 1. Ejecutando el archivo *poster.py*, el bot publicará los tweets del archivo *generated_sentences.txt*, esperando un número de horas igual al valor de la variable `hours` entre publicación y publicación.
 
 Los tweets son escritos en un archivo y no publicados directamente para darnos la posibilidad de filtrarlos y de decidir el orden de publicación de los mismos.
-
-##
-
-*El código para NLG basado en la cadena de Markov (`markovbot/markovbot.py`) que uso como plantilla es del usuario de GitHub @esdalmaijer*.
-**Thank you very much for keeping it public!**
 
 ##
 
